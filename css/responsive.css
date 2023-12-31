@@ -1,0 +1,179 @@
+@media (max-width: 1182px) {
+
+    /* Header */
+    .header {
+        max-width: 1200px;
+    }
+
+    /* Home */
+    .home .home-img {
+        width: 60%;
+
+    }
+
+    .home .home-content {
+        width: 40%;
+
+    }
+
+    .home-content h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+        letter-spacing: 3px;
+        margin-bottom: 1rem;
+    }
+
+    /* Deals */
+    .card {
+        padding: 1rem;
+        margin: 5px auto;
+        transition: all 0.4s ease-in-out;
+    }
+
+    /* Gallery */
+    .gallery::before {
+        height: 80%;
+        top: 12%;
+    }
+
+    .gallery-img img {
+        width: 250px;
+        margin: 0.2rem;
+
+    }
+
+    .gallery-content button {
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 1022px) {
+
+    /* Gallery */
+    .gallery-img img {
+        width: 300px;
+        margin: 0.2rem;
+
+    }
+
+    .gallery-content button {
+        margin: 20px 100px;
+    }
+}
+
+@media (max-width: 920px) {
+
+    /* Navbar */
+    .nav-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100vh;
+        background: var(--main-color3);
+        font-size: var(--h2-font);
+        text-align: center;
+        text-transform: capitalize;
+        padding-top: var(--header-height);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        transition: all 0.4s ease-in-out;
+    }
+
+    .show-nav {
+        width: 60%;
+    }
+
+    .nav-menu .nav-list {
+        display: block;
+    }
+
+    .nav-menu li {
+        padding: 15px 0;
+    }
+
+    .nav-link {
+        font-size: var(--h3-font);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: var(--main-color2);
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    /* Home Section */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .home-img {
+        display: none;
+    }
+
+    .home-content {
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* About */
+    .about-detail-content {
+        grid-template-columns: unset;
+    }
+
+    /* Services */
+    .services-content-description {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* gallery */
+    .gallery::before {
+        height: 80%;
+        top: 10%;
+    }
+
+    /* Footer */
+
+    .footer-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+
+    /* Home */
+    .home-content h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .home-content p {
+        line-height: 1rem;
+        letter-spacing: 1px;
+    }
+
+    /* Services */
+    .services-content-description {
+        grid-template-columns: unset;
+    }
+
+    /* Gallery */
+    .gallery::before {
+        height: 95%;
+        top: 5%;
+    }
+
+    /* Footer */
+    .footer {
+        margin: 5rem 0 0 0;
+    }
+
+    .footer-list {
+        grid-template-columns: unset;
+    }
+}
